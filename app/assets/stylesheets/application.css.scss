@@ -14,3 +14,18 @@
  *= require_self
  */
  
+@import "bootstrap-sprockets";
+@import "bootstrap";
+.navbar{
+	background-color: transparent;	
+}
+.leftimage{
+    float:left;
+}
+.centerspace{
+    float:left;
+}
+.rightimage{
+    float:right;
+      .navbar-default-bg:transparent;
+}

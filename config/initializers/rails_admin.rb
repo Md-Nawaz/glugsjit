@@ -1,13 +1,18 @@
 RailsAdmin.config do |config|
 
 
-config.authenticate_with do
-    authenticate_or_request_with_http_basic('Site Message') do |username, password|
-      username == 'root' && password == 'admin'
+# config.authenticate_with do
+#     authenticate_or_request_with_http_basic('Site Message') do |username, password|
+#       username == 'root' && password == 'admin'
+#     end
+#   end
+
+   config.authenticate_with do
+    authenticate_or_request_with_http_basic do |username, password|
+      username == 'user' &&
+      password == 'password'
     end
   end
-
-
 
   ### Popular gems integration
 
@@ -42,7 +47,6 @@ config.authenticate_with do
     edit
     delete
     show_in_app
-
     ## With an audit adapter, you can add:
     # history_index
     # history_show
